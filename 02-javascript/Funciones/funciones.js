@@ -45,3 +45,7 @@ transformarNumero(5,function (numero) {
     return numero*2;
 
 })
+
+transformarNumero(8,function (numero) {
+    return numero/2;
+})
