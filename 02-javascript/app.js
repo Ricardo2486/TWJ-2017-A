@@ -3,4 +3,3 @@
  */
 
 console.log('Hola Mundo'); //.log es una funcion que admite strings
-
