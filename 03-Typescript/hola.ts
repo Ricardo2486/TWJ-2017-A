@@ -3,7 +3,7 @@
  */
 
 
-//boolena
+//boolean
 let soltero : boolean = true; //false
 //number
 let materias: number =2.3;
@@ -49,10 +49,33 @@ class Persona{
     imprimirPersona(){
         console.log(this.nombre)
     }
+
+    public imprimirPersona ():UsuarioLogin{
+        console.log(this.nombre,this.apellido)
+        return{
+            nombre:this.nombre,
+            apellido:this.apellido
+        }
+    }
+
+    private imprimirNombre(nombre:string,apellido?:string):void{
+
+        if(apellido){
+            console.log(nombre,apellido)
+        }else{
+            console.log(nombre);
+        }
+    }
 }
 
 let cristian: Persona=new Persona();
 console.log(cristian.nombre="Cristian",cristian.apellido="Cabascango");
+
+function SumarNumeros(numero1:number,numero2:number):number{
+    return numero1+numero2;
+}
+
+
 
 
 
