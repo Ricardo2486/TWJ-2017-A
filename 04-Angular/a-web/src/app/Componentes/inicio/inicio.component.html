@@ -49,6 +49,9 @@
     <li4></li4>
   </ol>
   *///-->
+
+
+<!--
 <br>
 <br>
 <br>
@@ -189,6 +192,54 @@
     <div class="col">
 
       <img src="https://assets.ubuntu.com/v1/2e62cdb4-desktop-developer-hero.png?w=540" />
+    </div>
+  </div>
+</div>
+
+
+
+<input placeholder="Ingrese texto" type="text" [value]="nombre"#nombreEtiqueta>
+
+vista componente con ()
+componente a la vista con doble {} o []
+
+banana box model [()]
+
+<div class="container">
+
+  <input placeholder="Ingrese texto" type="text" [(ngModel)]="nombre">
+
+  {{nombre}}
+
+  <img [src]="nombre" alt="">
+
+  <br>
+  <br>
+  <button class="btn btn-primary"(click)="cambiarNombre()">Cambiar Valor</button>
+  <br>
+  <br>
+  <button class="btn btn-primary"(click)="cambiarOtroNombre()">Cambiar Otro Valor</button>
+
+
+</div>
+-->
+
+<div class="container">
+
+  <h1>Bienvenidos</h1>
+  <h2>Usuarios Conectados</h2>
+
+  <div class="row">
+    <div class ="col-sm-4" *ngFor="let usuario of arregloUsuarios">
+
+      <div class="card"style="width: 20rem">
+        <div class="card-block">
+          <h4 class="card-title">NOMBRE</h4>
+          <p class="card.text">Nombre+Apellido.</p>
+          <a href="#"class="btn btn-primary btn-block">Ir a Perfil</a>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
