@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+h1 {
+  background-color: black;
+  color:white;
+  text-align: center;
+}
+
+p {
+  background-color: black;
+}
+div{
+  color:white;
+  font-family: "Open Sans", "Myriad Pro", TimesNewRoman, sans-serif;
+  font-size: 1.2em;
+}
+
